@@ -4,7 +4,7 @@ import string
 
 list1 = []
 for i in range(1, 31):
-    list1.append(i**0.5)
+    list1.append(i**2)
 print(list1)
 
 # Write a Python program to display the examination schedule.
