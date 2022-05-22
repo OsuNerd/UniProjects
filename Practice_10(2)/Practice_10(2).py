@@ -12,7 +12,7 @@ print(addRightDigit(5,100)) # prints 1005
 def func(n,k):
     if k > 0:
         if k < len(str(n)):
-            return n//(10**((len(str(n)))-k)) # return first k digits of n
+            return n//(10**((len(str(n)))-k)) if n >= 0 else -(-n//(10**((len(str(n)[1:]))-k))) # return first k digits of n
         else:
             return n # return n if k > or == to the number of digits in n
     else:
