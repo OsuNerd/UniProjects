@@ -94,7 +94,7 @@ class Weather:
                 if abs(self.__class__.instances[i].atm - self.__class__.instances[i+1].atm) > maxdiff:
                     maxdiff = abs(self.__class__.instances[i].atm - self.__class__.instances[i+1].atm)
                     pos = i
-        return [self.__class__.instances[i], self.__class__.instances[i+1]]
+        return [self.__class__.instances[pos], self.__class__.instances[pos+1]]
 
 
 date1 = "04/08/2022"
